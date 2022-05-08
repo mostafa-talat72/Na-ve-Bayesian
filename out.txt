@@ -1,0 +1,27 @@
+P(Ci):
+	P(buys = "no") = 5/14 = 0.357143
+	P(buys = "yes") = 9/14 = 0.642857
+---------------------------------------------------
+
+Compute P(X|Ci) for each class
+	P(age = "31...40") | buys = "no") = 0/5 = 0
+	P(age = "31...40") | buys = "yes") = 4/9 = 0.444444
+	P(credit = "fair") | buys = "no") = 2/5 = 0.4
+	P(credit = "fair") | buys = "yes") = 6/9 = 0.666667
+	P(income = "medium") | buys = "no") = 1/5 = 0.2
+	P(income = "medium") | buys = "yes") = 4/9 = 0.444444
+	P(student = "yes") | buys = "no") = 1/5 = 0.2
+	P(student = "yes") | buys = "yes") = 6/9 = 0.666667
+---------------------------------------------------
+
+P(X|Ci) : 
+	P(X|buys = "no") =0 * 0.4 * 0.2 * 0.2 = 0
+	P(X|buys = "yes") =0.444444 * 0.666667 * 0.444444 * 0.666667 = 0.0877915
+---------------------------------------------------
+
+P(X|Ci)*P(Ci) :
+	P(X|buys = "no") * P(buys ="no") = 0
+	P(X|buys = "yes") * P(buys ="yes") = 0.0564374
+---------------------------------------------------
+
+Therefore, X belongs to class ("buys = yes")
